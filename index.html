@@ -2,39 +2,175 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Site Under Construction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+    <title>Empower & Engage: Inclusive Education</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Poppins for headings, Open Sans for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Optional: Font Awesome for icons (if you want them, add to head) -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>This website is temporarily unavailable.<br>Please check back later.</p>
-    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><h1>Empower & Engage</h1></a>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Lecture Topics</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Inspiring Change for a Truly Inclusive World</h2>
+                    <p>Expert lectures and workshops on equality and accessibility for organizations, educators, and leaders.</p>
+                    <a href="#contact" class="btn btn-primary">Book a Lecture</a>
+                    <a href="#services" class="btn btn-secondary">Explore Topics</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>Hello! I'm [Your Name], a passionate lecturer dedicated to fostering environments where everyone belongs and can thrive. My journey into equality and accessibility began with [brief personal anecdote or motivation]. I believe in the power of education to dismantle barriers and build bridges.</p>
+                        <p>With [X years] of experience and a background in [Your Field/Degree], I translate complex concepts into actionable strategies, empowering audiences to create truly inclusive spaces, whether digital, physical, or cultural.</p>
+                        <a href="#" class="btn btn-tertiary">Learn More About My Story</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/400x500/F0F4F8/333333?text=Your+Professional+Photo" alt="Professional photo of [Your Name], a friendly and approachable lecturer.">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section section-padding bg-light">
+            <div class="container">
+                <h2>My Lecture Topics & Services</h2>
+                <p class="section-description">Customizable presentations designed to meet your organization's unique needs.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Digital Accessibility for All</h3>
+                        <p>Practical strategies for creating inclusive websites, apps, and digital content compliant with WCAG standards.</p>
+                        <a href="#" class="btn btn-text">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Inclusive Leadership & Culture</h3>
+                        <p>Empowering leaders to foster psychological safety, belonging, and equitable opportunities within their teams.</p>
+                        <a href="#" class="btn btn-text">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Neurodiversity in the Workplace</h3>
+                        <p>Understanding and supporting neurodivergent talent, creating environments where unique strengths flourish.</p>
+                        <a href="#" class="btn btn-text">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Building Accessible Events</h3>
+                        <p>Guidance on planning and executing physical and virtual events that are welcoming and usable for everyone.</p>
+                        <a href="#" class="btn btn-text">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container">
+                <h2>What Clients Say</h2>
+                <div class="testimonial-carousel">
+                    <blockquote class="testimonial-card">
+                        <p>"[Your Name]'s lecture on inclusive design was incredibly insightful and actionable. Our team left feeling inspired and equipped to make real changes!"</p>
+                        <cite>— Jane Doe, Head of HR, Innovative Solutions Inc.</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"The workshop transformed our understanding of accessibility. The content was engaging, and [Your Name]'s delivery was exceptional."</p>
+                        <cite>— John Smith, Director of Product, Global Tech Co.</cite>
+                    </blockquote>
+                    <!-- Add more testimonials here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section section-padding bg-light">
+            <div class="container">
+                <h2>Resources & Insights</h2>
+                <p class="section-description">Stay informed with my latest articles, guides, and recommended tools.</p>
+                <div class="resources-grid">
+                    <article class="resource-card">
+                        <h3><a href="#">The Ultimate Guide to Accessible Web Forms</a></h3>
+                        <p>Learn how to design and code forms that are usable for everyone, regardless of ability.</p>
+                        <a href="#" class="btn btn-text">Read More →</a>
+                    </article>
+                    <article class="resource-card">
+                        <h3><a href="#">Podcast: Why Inclusive Language Matters</a></h3>
+                        <p>Tune into a discussion about the impact of language on inclusion and belonging.</p>
+                        <a href="#" class="btn btn-text">Listen Now →</a>
+                    </article>
+                    <!-- Add more resource cards -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2>Let's Talk About Your Needs</h2>
+                <p class="section-description">Ready to empower your team or organization? Fill out the form below or reach out directly.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization (Optional)</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry">What are you looking for?</label>
+                        <textarea id="inquiry" name="inquiry" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                </form>
+                <p class="direct-contact">Prefer to connect directly? Email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or call <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2023 [Your Name/Brand Name]. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn Profile"><img src="https://via.placeholder.com/30/cccccc?text=LI" alt="LinkedIn icon"></a>
+                <a href="#" aria-label="Twitter Profile"><img src="https://via.placeholder.com/30/cccccc?text=TW" alt="Twitter icon"></a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
