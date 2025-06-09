@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Default to English -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empower & Engage: Inclusive Education</title>
+    <title data-i18n="page_title">Empower & Engage: Inclusive Education</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts: Poppins for headings, Open Sans for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,17 +18,27 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="/"><h1>Empower & Engage</h1></a>
+                <a href="/">
+                    <h1 data-i18n="logo_text">Empower & Engage</h1>
+                </a>
             </div>
             <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Lecture Topics</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About Me</a></li>
+                    <li><a href="#services" data-i18n="nav_topics">Lecture Topics</a></li>
+                    <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+                    <li><a href="#resources" data-i18n="nav_resources">Resources</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher" role="radiogroup" aria-label="Select website language">
+                <button class="lang-button active" data-lang="en" aria-checked="true" role="radio" aria-label="Switch to English">
+                    <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="20" alt="United States flag"> EN
+                </button>
+                <button class="lang-button" data-lang="sv" aria-checked="false" role="radio" aria-label="Byt till svenska">
+                    <img src="https://flagcdn.com/w20/se.png" srcset="https://flagcdn.com/w40/se.png 2x" width="20" alt="Sveriges flagga"> SV
+                </button>
+            </div>
         </div>
     </header>
 
@@ -36,10 +46,10 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero-content">
-                    <h2>Inspiring Change for a Truly Inclusive World</h2>
-                    <p>Expert lectures and workshops on equality and accessibility for organizations, educators, and leaders.</p>
-                    <a href="#contact" class="btn btn-primary">Book a Lecture</a>
-                    <a href="#services" class="btn btn-secondary">Explore Topics</a>
+                    <h2 data-i18n="hero_heading">Inspiring Change for a Truly Inclusive World</h2>
+                    <p data-i18n="hero_subheading">Expert lectures and workshops on equality and accessibility for organizations, educators, and leaders.</p>
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn_book_lecture">Book a Lecture</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="btn_explore_topics">Explore Topics</a>
                 </div>
             </div>
         </section>
@@ -48,13 +58,13 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text">
-                        <h2>About Me</h2>
-                        <p>Hello! I'm [Your Name], a passionate lecturer dedicated to fostering environments where everyone belongs and can thrive. My journey into equality and accessibility began with [brief personal anecdote or motivation]. I believe in the power of education to dismantle barriers and build bridges.</p>
-                        <p>With [X years] of experience and a background in [Your Field/Degree], I translate complex concepts into actionable strategies, empowering audiences to create truly inclusive spaces, whether digital, physical, or cultural.</p>
-                        <a href="#" class="btn btn-tertiary">Learn More About My Story</a>
+                        <h2 data-i18n="about_heading">About Me</h2>
+                        <p data-i18n="about_p1">Hello! I'm [Your Name], a passionate lecturer dedicated to fostering environments where everyone belongs and can thrive. My journey into equality and accessibility began with [brief personal anecdote or motivation]. I believe in the power of education to dismantle barriers and build bridges.</p>
+                        <p data-i18n="about_p2">With [X years] of experience and a background in [Your Field/Degree], I translate complex concepts into actionable strategies, empowering audiences to create truly inclusive spaces, whether digital, physical, or cultural.</p>
+                        <a href="#" class="btn btn-tertiary" data-i18n="btn_learn_more_about">Learn More About My Story</a>
                     </div>
                     <div class="about-image">
-                        <img src="https://via.placeholder.com/400x500/F0F4F8/333333?text=Your+Professional+Photo" alt="Professional photo of [Your Name], a friendly and approachable lecturer.">
+                        <img src="https://via.placeholder.com/400x500/F0F4F8/333333?text=Your+Professional+Photo" data-i18n-alt="about_image_alt" alt="Professional photo of [Your Name], a friendly and approachable lecturer.">
                     </div>
                 </div>
             </div>
@@ -62,28 +72,28 @@
 
         <section id="services" class="services-section section-padding bg-light">
             <div class="container">
-                <h2>My Lecture Topics & Services</h2>
-                <p class="section-description">Customizable presentations designed to meet your organization's unique needs.</p>
+                <h2 data-i18n="services_heading">My Lecture Topics & Services</h2>
+                <p class="section-description" data-i18n="services_description">Customizable presentations designed to meet your organization's unique needs.</p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3>Digital Accessibility for All</h3>
-                        <p>Practical strategies for creating inclusive websites, apps, and digital content compliant with WCAG standards.</p>
-                        <a href="#" class="btn btn-text">Learn More →</a>
+                        <h3 data-i18n="service1_heading">Digital Accessibility for All</h3>
+                        <p data-i18n="service1_text">Practical strategies for creating inclusive websites, apps, and digital content compliant with WCAG standards.</p>
+                        <a href="#" class="btn btn-text" data-i18n="btn_learn_more">Learn More →</a>
                     </div>
                     <div class="service-card">
-                        <h3>Inclusive Leadership & Culture</h3>
-                        <p>Empowering leaders to foster psychological safety, belonging, and equitable opportunities within their teams.</p>
-                        <a href="#" class="btn btn-text">Learn More →</a>
+                        <h3 data-i18n="service2_heading">Inclusive Leadership & Culture</h3>
+                        <p data-i18n="service2_text">Empowering leaders to foster psychological safety, belonging, and equitable opportunities within their teams.</p>
+                        <a href="#" class="btn btn-text" data-i18n="btn_learn_more">Learn More →</a>
                     </div>
                     <div class="service-card">
-                        <h3>Neurodiversity in the Workplace</h3>
-                        <p>Understanding and supporting neurodivergent talent, creating environments where unique strengths flourish.</p>
-                        <a href="#" class="btn btn-text">Learn More →</a>
+                        <h3 data-i18n="service3_heading">Neurodiversity in the Workplace</h3>
+                        <p data-i18n="service3_text">Understanding and supporting neurodivergent talent, creating environments where unique strengths flourish.</p>
+                        <a href="#" class="btn btn-text" data-i18n="btn_learn_more">Learn More →</a>
                     </div>
                     <div class="service-card">
-                        <h3>Building Accessible Events</h3>
-                        <p>Guidance on planning and executing physical and virtual events that are welcoming and usable for everyone.</p>
-                        <a href="#" class="btn btn-text">Learn More →</a>
+                        <h3 data-i18n="service4_heading">Building Accessible Events</h3>
+                        <p data-i18n="service4_text">Guidance on planning and executing physical and virtual events that are welcoming and usable for everyone.</p>
+                        <a href="#" class="btn btn-text" data-i18n="btn_learn_more">Learn More →</a>
                     </div>
                 </div>
             </div>
@@ -91,77 +101,77 @@
 
         <section id="testimonials" class="testimonials-section section-padding">
             <div class="container">
-                <h2>What Clients Say</h2>
+                <h2 data-i18n="testimonials_heading">What Clients Say</h2>
                 <div class="testimonial-carousel">
                     <blockquote class="testimonial-card">
-                        <p>"[Your Name]'s lecture on inclusive design was incredibly insightful and actionable. Our team left feeling inspired and equipped to make real changes!"</p>
-                        <cite>— Jane Doe, Head of HR, Innovative Solutions Inc.</cite>
+                        <p data-i18n="testimonial1_text">"[Your Name]'s lecture on inclusive design was incredibly insightful and actionable. Our team left feeling inspired and equipped to make real changes!"</p>
+                        <cite data-i18n="testimonial1_cite">— Jane Doe, Head of HR, Innovative Solutions Inc.</cite>
                     </blockquote>
                     <blockquote class="testimonial-card">
-                        <p>"The workshop transformed our understanding of accessibility. The content was engaging, and [Your Name]'s delivery was exceptional."</p>
-                        <cite>— John Smith, Director of Product, Global Tech Co.</cite>
+                        <p data-i18n="testimonial2_text">"The workshop transformed our understanding of accessibility. The content was engaging, and [Your Name]'s delivery was exceptional."</p>
+                        <cite data-i18n="testimonial2_cite">— John Smith, Director of Product, Global Tech Co.</cite>
                     </blockquote>
-                    <!-- Add more testimonials here -->
+                    <!-- Add more testimonials here, each with unique data-i18n attributes -->
                 </div>
             </div>
         </section>
 
         <section id="resources" class="resources-section section-padding bg-light">
             <div class="container">
-                <h2>Resources & Insights</h2>
-                <p class="section-description">Stay informed with my latest articles, guides, and recommended tools.</p>
+                <h2 data-i18n="resources_heading">Resources & Insights</h2>
+                <p class="section-description" data-i18n="resources_description">Stay informed with my latest articles, guides, and recommended tools.</p>
                 <div class="resources-grid">
                     <article class="resource-card">
-                        <h3><a href="#">The Ultimate Guide to Accessible Web Forms</a></h3>
-                        <p>Learn how to design and code forms that are usable for everyone, regardless of ability.</p>
-                        <a href="#" class="btn btn-text">Read More →</a>
+                        <h3 data-i18n="resource1_heading"><a href="#">The Ultimate Guide to Accessible Web Forms</a></h3>
+                        <p data-i18n="resource1_text">Learn how to design and code forms that are usable for everyone, regardless of ability.</p>
+                        <a href="#" class="btn btn-text" data-i18n="btn_read_more">Read More →</a>
                     </article>
                     <article class="resource-card">
-                        <h3><a href="#">Podcast: Why Inclusive Language Matters</a></h3>
-                        <p>Tune into a discussion about the impact of language on inclusion and belonging.</p>
-                        <a href="#" class="btn btn-text">Listen Now →</a>
+                        <h3 data-i18n="resource2_heading"><a href="#">Podcast: Why Inclusive Language Matters</a></h3>
+                        <p data-i18n="resource2_text">Tune into a discussion about the impact of language on inclusion and belonging.</p>
+                        <a href="#" class="btn btn-text" data-i18n="btn_listen_now">Listen Now →</a>
                     </article>
-                    <!-- Add more resource cards -->
+                    <!-- Add more resource cards, each with unique data-i18n attributes -->
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact-section section-padding">
             <div class="container">
-                <h2>Let's Talk About Your Needs</h2>
-                <p class="section-description">Ready to empower your team or organization? Fill out the form below or reach out directly.</p>
+                <h2 data-i18n="contact_heading">Let's Talk About Your Needs</h2>
+                <p class="section-description" data-i18n="contact_description">Ready to empower your team or organization? Fill out the form below or reach out directly.</p>
                 <form class="contact-form">
                     <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name" data-i18n="form_name_label">Your Name</label>
+                        <input type="text" id="name" name="name" required data-i18n-placeholder="form_name_placeholder" placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email" data-i18n="form_email_label">Your Email</label>
+                        <input type="email" id="email" name="email" required data-i18n-placeholder="form_email_placeholder" placeholder="your.email@example.com">
                     </div>
                     <div class="form-group">
-                        <label for="organization">Organization (Optional)</label>
-                        <input type="text" id="organization" name="organization">
+                        <label for="organization" data-i18n="form_org_label">Organization (Optional)</label>
+                        <input type="text" id="organization" name="organization" data-i18n-placeholder="form_org_placeholder" placeholder="Your Organization">
                     </div>
                     <div class="form-group">
-                        <label for="inquiry">What are you looking for?</label>
-                        <textarea id="inquiry" name="inquiry" rows="5" required></textarea>
+                        <label for="inquiry" data-i18n="form_inquiry_label">What are you looking for?</label>
+                        <textarea id="inquiry" name="inquiry" rows="5" required data-i18n-placeholder="form_inquiry_placeholder" placeholder="Tell me about your needs"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="form_submit_btn">Send Inquiry</button>
                 </form>
-                <p class="direct-contact">Prefer to connect directly? Email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or call <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
+                <p class="direct-contact" data-i18n="contact_direct_p">Prefer to connect directly? Email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or call <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>© 2023 [Your Name/Brand Name]. All rights reserved.</p>
+            <p data-i18n="footer_copyright">© 2023 [Your Name/Brand Name]. All rights reserved.</p>
             <nav class="footer-nav" aria-label="Footer navigation">
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Accessibility Statement</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+                    <li><a href="#" data-i18n="footer_accessibility">Accessibility Statement</a></li>
+                    <li><a href="#" data-i18n="footer_terms">Terms of Service</a></li>
                 </ul>
             </nav>
             <div class="social-links">
@@ -172,5 +182,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
